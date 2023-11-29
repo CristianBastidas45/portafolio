@@ -1,5 +1,5 @@
 import React from 'react'
-import './style/CardInfo.css'
+import './style/Cardinfo.css'
 
 const CardInfo = ({ info }) => {
 
