@@ -34,7 +34,6 @@ const HomePage = () => {
         <img className="home__center__logo" src='./LogoUp.svg' alt="Logoup" />
         <p className="home__center__p">La verdad solo se puede encontrar en un lugar: el código. <span className="home__center__p__span">Robert C. Martin</span> </p>
       </section>
-      {/* <box-icon type='logo' className='linkedin'></box-icon> */}
       <h2 className="home__subtitle">Software Developer <span className="home__subtitle__cursor">|</span></h2>
       <section className="home__redes">
         <a className="home__redes__btn github" href="https://github.com/CristianBastidas45" target="_blank"><i className='bx bxl-github'></i></a>
