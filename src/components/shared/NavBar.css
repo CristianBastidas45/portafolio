@@ -1,0 +1,32 @@
+.navbar-container{
+    width: 95vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+}
+.navbar__d-l{
+    aspect-ratio: 1;
+}
+.navbar__dark{
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.5rem;
+}
+.navbar__list{
+    display: flex;
+    gap: 1em;
+    padding-right: 1.5em;
+    text-decoration: none;
+}
+.navbar__li{
+    font-size: 1.1rem;
+}
+.navbar__link{
+    text-decoration: none;
+    color: inherit;
+}
+.link-active{
+    text-decoration-line: underline;
+    font-size: 1.2em;
+    filter: brightness(1.1);
+}

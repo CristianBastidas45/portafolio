@@ -1,0 +1,39 @@
+.myprojects-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.myprojects__slider{
+    display: flex;
+    align-items: end;   
+}
+.myprojects__slider{
+    width: 500%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: start;
+    transition: all 1s ease;
+    /* transform: translateX(-50%);    */
+}
+.myprojects__dots{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    font-size: 1.5rem;
+}
+.myprojects__dots__list{
+    display: flex;
+    gap: 1em;
+}
+.myprojects__dot:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.dot-active{
+    border: 2px solid rgba(89, 163, 15, 0.89);
+    border-radius: 50%;
+}

@@ -1,0 +1,82 @@
+.cardprojects-container{
+    width: calc(100% /5);
+    max-height: 90vh;
+    aspect-ratio: 1;
+    display: flex;   
+    flex-wrap: nowrap;
+    align-items: start;
+    text-align: center;
+    margin: 0 2em;
+    position: relative;
+}
+.cardprojects__img{
+    height: 95%;
+    width: 95%;
+    background-image: url('./Crud.png');
+    background-repeat: no-repeat;
+    background-size: contain;   
+    margin: 1em auto;
+}
+.cardprojects__info{
+    max-width: 25em;
+    position: absolute;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    right: -1em;
+    background-color: #4fc3dc;
+    border-radius: 0.8em;
+    padding: 1em;
+}
+.cardprojects__info__title{
+    font-size: 2rem;
+    margin-bottom: 1em;
+    background-color: #ff2d75;
+    border-radius: 0.8em;
+}
+.cardprojects__info__p{
+    text-align: justify;
+    margin-bottom: 1em;
+    font-size: 1.1rem;
+}
+.cardprojects__info__list{
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    font-size: 1.2rem;
+    margin-bottom: 1.5em;
+}
+.cardprojects__info__list-li{
+    background-color: #ff2d75;
+    padding: 0.2em 0.5em;
+    border-radius: 0.8em;
+}
+.cardprojects__info__nav{
+    text-align: center;
+}
+.cardprojects__info__nav-a{
+    font-size: 4em;
+    color: rgb(65, 61, 61);
+    margin-right: 1em;
+    animation: transform 10s linear ease;
+}
+.cardprojects__info__nav-a:hover{
+    transform: scale(1.6);
+}
+
+@media (max-width: 600px) {
+    .cardprojects-container{
+        flex-wrap: wrap;
+        max-height: 45vh;
+    }
+    .cardprojects__info{
+        position: relative;
+        margin-top: -15em;
+        margin-right: -4em;
+        scale: 0.6;
+    }
+}
+
+
+

@@ -1,0 +1,37 @@
+[
+    {
+        "Mood": "education",
+        "title": "Desarrollo Web Full Stack",
+        "description": "Academlo",
+        "date": "2023 - Actualidad",
+        "icon": "bx bxs-pencil"
+    },
+    {
+        "Mood": "education",
+        "title": "Magister en Ingeniería Electrónica",
+        "description": "Universidad de Nariño - Col",
+        "date": "2021 - 2023",
+        "icon": "bx bxs-pencil"
+    },
+    {
+        "Mood": "education",
+        "title": "Ingeniero Electrónico",
+        "description": "Universidad CESMAG - Col",
+        "date": "2012 - 2018",
+        "icon": "bx bxs-pencil"
+    },
+    {
+        "Mood": "job",
+        "title": "Avante - Col",
+        "description": "Contratista Area Sistemas de Informacion",
+        "date": "2019 - Actual",
+        "icon": "bx bxs-shopping-bag"
+    },
+    {
+        "Mood": "job",
+        "title": "Fundacion Zamora Teran - Nic",
+        "description": "Desarrollo de un sistema Automatico de riego utilizando arduino",
+        "date": "2018 - 2019",
+        "icon": "bx bxs-shopping-bag"
+    }
+]

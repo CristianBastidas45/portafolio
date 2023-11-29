@@ -1,0 +1,87 @@
+.contactpage-container{
+    width: 95vw;
+    margin: 1em auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    max-width: 1200px;
+}
+.contacpage__formulario{
+    max-width: 95%;
+    margin-right: 0.5em;
+}
+.contactpage__formulario__info{
+    font-weight: 100;
+}
+.color__span{
+    color: #ff2d75;
+}
+.contactpage__formulario__form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.contactpage__formulario__form__l{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.contactpage__formulario__form__i{
+    font-family: inherit;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.5em 0.5em;
+    border-radius: 0.4em;
+}
+.form__textarea{
+    min-height: 8em;
+}
+.contactpage__formulario__form__btn{
+    border-radius: 0.8em;
+    height: 3em;
+    width: 5em;
+    border: none;
+    background-color: #ff2d75;
+    font-size: 1.2rem;
+    color: inherit;
+}
+.contactpage__formulario__form__btn:hover{
+    filter: brightness(1.1);
+    box-shadow: 0.1em 0.1em #0008;
+}
+.contacpage__mensaje{
+    max-width: 90%;
+    margin-right: 0.5em;
+    margin-top: 2em;
+    text-align: center;
+}
+.contacpage__mensaje__title{
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+}
+.contacpage__mensaje__p{
+    text-align: justify;
+    margin-bottom: 0.5em;
+}
+.contacpage__mensaje__img{
+    max-width: 80%;
+}
+.contacpage__footer{
+    grid-column: 2 span;
+    font-size: 1.2rem;
+    color: #ff2d75;
+    text-align: center;
+    font-weight: 600;
+    display: block;
+    font-family: monospace;
+}
+
+
+@media (max-width: 600px) {
+    .contactpage-container{
+        grid-template-columns: 1fr;
+    }
+    .contacpage__footer{
+        grid-column: 1 span;
+    }   
+}
+

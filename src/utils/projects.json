@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Pokedex",
+        "description": "Aplicacion web que permite ver la informacion de todos tus pokemons favoritos, se puede filtrar por tipo o directamente con el nombre del pokemon. Conceptos importantes: React router, Redux, paginacion, manejo de errores, rutas protegidas.",
+        "img":"./pokedex.png",
+        "techs": [{"tech":"react","id":"1"},{"tech":"css","id":"2"},{"tech":"netlify","id":"3"},{"tech":"github","id":"4"}],
+        "web":"https://pokedex-by-cristian.netlify.app/",
+        "github":"https://github.com/CristianBastidas45/pokedex",
+        "id":"5"
+    },
+    {
+        "title": "Usuarios CRUD",
+        "description": "Aplicacion web que permite interactuar con una API de usuarios a traves de todos los metodos http. Conceptos importantes: Métodos HTTP (get, create, delete, update) y de props.",
+        "img":"./Crud.png",
+        "techs": [{"tech":"react","id":"1"},{"tech":"css","id":"2"},{"tech":"netlify","id":"3"},{"tech":"github","id":"4"}],
+        "web":"https://crus-users-by-cristian.netlify.app/",
+        "github":"https://github.com/CristianBastidas45/users",
+        "id":"4"
+    },
+    {
+        "title": "Rick and Morty",
+        "description": "Aqui podras encontrar todos los pesonajes de esta serie filtrandolos por su dimencion y en cada uno su informacion relevante, cuenta con pagina de carga. Conceptos importantes: List and keys, input controlados, renderizado condicional y manejo de errores.",
+        "img":"./rick-and-morty.png",
+        "techs": [{"tech":"react","id":"1"},{"tech":"css","id":"2"},{"tech":"netlify","id":"3"},{"tech":"github","id":"4"}],
+        "web":"https://rick-and-morty-by-cristian.netlify.app/",
+        "github":"https://github.com/CristianBastidas45/Rick-and-morty",
+        "id":"3"
+    },
+    {
+        "title": "Clima En el mundo",
+        "description": "Aqui Podras saber el clima en tu ubicacion actual o buscar algun lugar del muno para saber su estado climatico. Conceptos importantes: useEffect, peticiones asíncronas, API",
+        "img":"./clima-web.png",
+        "techs": [{"tech":"react","id":"1"},{"tech":"css","id":"2"},{"tech":"netlify","id":"3"},{"tech":"github","id":"4"}],
+        "web":"https://weather-app-by-cristian.netlify.app/",
+        "github":"https://github.com/CristianBastidas45/weather",
+        "id":"2"
+    },
+    {
+        "title": "Galleta de la fortuna",
+        "description": "En la galleta de la fortuna, se reciben mensajes aleatorios y con fondos escritorios cada vez que se presiona un boton. Conceptos importantes: Components, Props y useState ",
+        "img":"./galleta-fortuna.png",
+        "techs": [{"tech":"react","id":"1"},{"tech":"css","id":"2"},{"tech":"netlify","id":"3"},{"tech":"github","id":"4"}],
+        "web":"https://galleta-fortuna-by-cristian.netlify.app/",
+        "github":"https://github.com/CristianBastidas45/Galleta-Fortuna",
+        "id":"1"
+    }
+]

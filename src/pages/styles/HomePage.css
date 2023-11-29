@@ -1,0 +1,194 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.home__title {
+    font-size: 3rem;
+    background: #fff;
+    background: linear-gradient(to right, #4fc3dc,#ff2d75);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    display: inline-block;
+    position: relative;
+}
+
+.home__center {
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin: 1em 2em;
+    flex-wrap: wrap;
+}
+
+.home__center__logo {
+    min-width: 50%;
+    max-width: 60%;
+}
+.home__center__p {
+    max-width: 40%;
+    font-size: 1.5rem;
+}
+.home__center__p__span{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.home__subtitle {
+    font-size: xx-large;
+    display: block;
+    font-family: monospace;
+    width: 20ch;
+    white-space: nowrap;
+    animation: escribiendo 2s steps(20);
+    overflow: hidden;
+}
+
+.home__subtitle__cursor {
+    animation: 0.6s parpadeo-cursor infinite;
+}
+.home__redes{
+    display: flex;
+    gap: 1.5em;
+}
+.home__redes__btn{
+    color: inherit;
+    font-size: 5rem;
+    transition: all 1.2s ease;
+}
+.home__redes__btn:hover{
+    filter: brightness(1.3);
+    scale: 1.4;
+    transform: rotate(360deg);
+}
+
+.clock {
+    background: inherit;
+    width: 13em;
+    height: 13em;
+    border: 14px solid rgb(105, 26, 26);
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 2em 4em -1em #0007;
+}
+.dot{
+    background: rgb(105,26,26);
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    z-index: 10;
+    box-shadow: 0 0.2em 0.4em -0.1em #0007;
+}
+.hour__hand{
+    position: absolute;
+    z-index: 6;
+    width: 0.5em;
+    height: 4em;
+    background: rgb(105, 26, 26);
+    top: 2.5em;
+    left: 50%;
+    margin-left: -0.25em;
+    border-radius: 50% 50%  0 0;
+    transform-origin: 50% 4em;
+}
+.minute__hand{
+    position: absolute;
+    z-index: 6;
+    width: 0.4em;
+    height: 5em;
+    background: rgb(105, 26, 26);
+    top: 1.5em;
+    left: 50%;
+    margin-left: -0.25em;
+    border-radius: 50% 50% 0 0;
+    transform-origin: 50% 5em;
+}
+.second__hand{
+    position: absolute;
+    z-index: 6;
+    width: 0.3em;
+    height: 5.5em;
+    background: rgb(105, 26, 26);
+    top: 1.5em;
+    left: 50%;
+    margin-left: -0.15em;
+    border-radius: 50% 50% 0 0;
+    transform-origin: 50% 5em;
+}
+.clock__span{
+    display: inline-block;
+    position: absolute;
+    color: #333;
+    font-size: 1.2em;
+    font-weight: 300;
+    z-index: 4;
+}
+.h12{
+    top: -0.2em;
+    left: 50%;
+    margin-left: -0.4em;
+    color: inherit;
+}
+.h3{
+    top: 4.5em;
+    right: 0.2em;
+    color: inherit;
+}
+.h6{
+    bottom: -0.2em;
+    left: 50%;
+    color: inherit;
+}
+.h9{
+    left: 0;
+    top: 4.7em;
+    color: inherit;
+}
+.info{
+    position: absolute;
+    width: 6em;
+    height: 1em;
+    text-align: center;
+    line-height: 2em;
+    color: inherit;
+    font-size: 1em;
+    top: 7em;
+    left: 50%;
+    margin-left: -3em;
+    font-weight: 300;
+    z-index: 3;
+    letter-spacing: 0.1em;
+}
+.date{
+    top: 1em;
+}
+.day{
+    top: 10em;
+}
+.home__vanilla{
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+
+
+@keyframes escribiendo {
+    from {
+        width: 0;
+    }
+}
+@keyframes parpadeo-cursor {
+    50% {
+        opacity: 0;
+    }
+}

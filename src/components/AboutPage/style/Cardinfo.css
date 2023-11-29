@@ -1,0 +1,43 @@
+.cardinfo-container{
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
+.cardinfo__info{
+    width: 30vw;
+    min-height: 6em;
+}
+.cardinfo__info__title{
+    margin-bottom: 0.5em;
+    font-size: 1.8rem;
+}
+.cardinfo__info__p{
+    font-weight: 100;
+}
+.cardinfo__date{
+    width: 15vw;
+    border-left: 2px solid #ff2d75;
+    padding-left: 3em;
+    position: relative;
+}
+.cardinfo__date__icon{
+    font-size: 1.2rem;
+    position: absolute;
+    top: 1.5em;
+    right: 0;
+    bottom: 0;
+    left: -0.5em;
+    z-index: 1;
+}
+.cardinfo__date__circle{
+    font-size: 1.8rem;
+    position: absolute;
+    /* top: 1em; */
+    right: 0;
+    bottom: -0.5em;
+    left: -0.55em;
+    z-index: 1;
+}
+.cardinfo__date__p{
+    font-size: 1.2rem;
+}
