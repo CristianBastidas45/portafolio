@@ -24,6 +24,7 @@
     align-items: center;
     gap: 1em;
     font-size: 1.5rem;
+
 }
 .myprojects__dots__list{
     display: flex;
@@ -36,4 +37,13 @@
 .dot-active{
     border: 2px solid rgba(89, 163, 15, 0.89);
     border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+    .myprojects-container{
+        flex-direction: column-reverse;
+    }
+    .myprojects__dots{
+        margin-bottom: 1em;
+    }
 }

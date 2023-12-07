@@ -1,12 +1,21 @@
 [
     {
+        "title": "E-Comerce",
+        "description": "tienda virtual que contiene articulos a la venta con una amigable interaccion con el usuario. Conceptos importantes: peticiones asincronas, paginacion, CRUD con API",
+        "img":"./e-comerce.png",
+        "techs": [{"tech":"react","id":"1"},{"tech":"css","id":"2"},{"tech":"netlify","id":"3"},{"tech":"github","id":"4"}],
+        "web":"https://e-comerce-by-cristian.netlify.app/",
+        "github":"https://github.com/CristianBastidas45/e-comerce",
+        "id":"5"
+    },
+    {
         "title": "Pokedex",
         "description": "Aplicacion web que permite ver la informacion de todos tus pokemons favoritos, se puede filtrar por tipo o directamente con el nombre del pokemon. Conceptos importantes: React router, Redux, paginacion, manejo de errores, rutas protegidas.",
         "img":"./pokedex.png",
         "techs": [{"tech":"react","id":"1"},{"tech":"css","id":"2"},{"tech":"netlify","id":"3"},{"tech":"github","id":"4"}],
         "web":"https://pokedex-by-cristian.netlify.app/",
         "github":"https://github.com/CristianBastidas45/pokedex",
-        "id":"5"
+        "id":"4"
     },
     {
         "title": "Usuarios CRUD",
@@ -15,7 +24,7 @@
         "techs": [{"tech":"react","id":"1"},{"tech":"css","id":"2"},{"tech":"netlify","id":"3"},{"tech":"github","id":"4"}],
         "web":"https://crus-users-by-cristian.netlify.app/",
         "github":"https://github.com/CristianBastidas45/users",
-        "id":"4"
+        "id":"3"
     },
     {
         "title": "Rick and Morty",
@@ -24,7 +33,7 @@
         "techs": [{"tech":"react","id":"1"},{"tech":"css","id":"2"},{"tech":"netlify","id":"3"},{"tech":"github","id":"4"}],
         "web":"https://rick-and-morty-by-cristian.netlify.app/",
         "github":"https://github.com/CristianBastidas45/Rick-and-morty",
-        "id":"3"
+        "id":"2"
     },
     {
         "title": "Clima En el mundo",
@@ -33,15 +42,6 @@
         "techs": [{"tech":"react","id":"1"},{"tech":"css","id":"2"},{"tech":"netlify","id":"3"},{"tech":"github","id":"4"}],
         "web":"https://weather-app-by-cristian.netlify.app/",
         "github":"https://github.com/CristianBastidas45/weather",
-        "id":"2"
-    },
-    {
-        "title": "Galleta de la fortuna",
-        "description": "En la galleta de la fortuna, se reciben mensajes aleatorios y con fondos escritorios cada vez que se presiona un boton. Conceptos importantes: Components, Props y useState ",
-        "img":"./galleta-fortuna.png",
-        "techs": [{"tech":"react","id":"1"},{"tech":"css","id":"2"},{"tech":"netlify","id":"3"},{"tech":"github","id":"4"}],
-        "web":"https://galleta-fortuna-by-cristian.netlify.app/",
-        "github":"https://github.com/CristianBastidas45/Galleta-Fortuna",
         "id":"1"
-    }
+    }    
 ]

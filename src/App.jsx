@@ -31,6 +31,13 @@ function App() {
         <span style={{"--i":"17"}}></span>
         <span style={{"--i":"13"}}></span>
         <span style={{"--i":"28"}}></span>
+        <span style={{"--i":"30"}}></span>
+        <span style={{"--i":"15"}}></span>
+        <span style={{"--i":"19"}}></span>
+        <span style={{"--i":"22"}}></span>
+        <span style={{"--i":"34"}}></span>
+        <span style={{"--i":"12"}}></span>
+        <span style={{"--i":"24"}}></span>
       </div>
       <NavBar />
       <Routes>
