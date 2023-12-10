@@ -2,8 +2,14 @@
     width: 95vw;
     display: flex;
     justify-content: space-between;
-    margin: 1em;
+    /* margin: 1em; */
+    padding: 0.5em 1em ;
+    position: fixed;
+    z-index: 10;
+    backdrop-filter: blur(5px);    
+    position: relative;
 }
+
 .navbar__d-l{
     aspect-ratio: 1;
 }
@@ -14,6 +20,7 @@
 }
 .navbar__list{
     display: flex;
+    flex-direction: row;
     gap: 1em;
     padding-right: 1.5em;
     text-decoration: none;
@@ -29,4 +36,29 @@
     text-decoration-line: underline;
     font-size: 1.2em;
     filter: brightness(1.1);
+}
+.navbar__menu{
+    position: absolute;
+    right: 1em;
+    font-size: 2rem;
+    scale: 0;
+}
+@media (max-width: 600px){
+    .navbar__list{
+        flex-direction: column;
+        position: absolute;
+        top: 3em;
+        right: 0;
+        background-color: #4fc2dcdc;
+        border-radius: 0.8em;
+        padding-left: 0.4em;
+        translate: 100%;
+        transition: translate 500ms ease;
+    }
+    .list-active{
+        translate: 0%;
+    }
+    .navbar__menu{
+        scale: 1;
+    }
 }

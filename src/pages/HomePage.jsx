@@ -30,6 +30,7 @@ const HomePage = () => {
   return (
     <article className="home-container">
       <h1 className="home__title" >Bienvenido</h1>
+      <h2 className="home__title home__name" >Soy Cristian Bastidas</h2>
       <section className="home__center">
         <img className="home__center__logo" src='./LogoUp.svg' alt="Logoup" />
         <p className="home__center__p">La verdad solo se puede encontrar en un lugar: el código. <span className="home__center__p__span">Robert C. Martin</span> </p>

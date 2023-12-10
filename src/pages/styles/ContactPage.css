@@ -1,6 +1,6 @@
 .contactpage-container{
     width: 95vw;
-    margin: 1em auto;
+    margin: 2.8em auto 1em;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1em;

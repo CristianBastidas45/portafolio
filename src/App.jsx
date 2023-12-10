@@ -5,6 +5,7 @@ import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
 import NavBar from './components/shared/NavBar'
 import MyProjectsPage from './pages/MyProjectsPage'
+import Footer from './components/shared/Footer'
 
 function App() {
 
@@ -47,6 +48,7 @@ function App() {
         <Route path='/projects' element={<MyProjectsPage /> } />
         <Route path='*' element={<h3>❌ Error 404 - This route does not exist 😵</h3>} />
       </Routes>
+      <Footer />
     </div>
   )
 }

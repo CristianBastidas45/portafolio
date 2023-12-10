@@ -1,7 +1,7 @@
 .appprincipal-container{
     position: relative;
     width: 100%;
-    height: 98vh;
+    min-height: 100vh;
     overflow-x: hidden;
 }
 .appprincipal__bubbles{

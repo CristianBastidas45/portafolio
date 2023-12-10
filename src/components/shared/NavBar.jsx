@@ -6,8 +6,7 @@ const NavBar = () => {
 
   const [isDark, setIsDark] = useState(false)
   const [linkSelected, setLinkSelected] = useState(1)
-
-
+  const [isMenuShowed, setIsMenuShowed] = useState(false)
 
   const handleModo = () => {
     setIsDark(!isDark)
@@ -23,6 +22,11 @@ const NavBar = () => {
   const handleSelected = e =>{
     setLinkSelected(+e.target.id)
   }
+
+  const handleMenu = () => {
+    setIsMenuShowed(!isMenuShowed)
+  }
+
   return (
     <header className="navbar-container">
       <span className="navbar__d-l" onClick={handleModo}>
@@ -34,7 +38,7 @@ const NavBar = () => {
         }
       </span>
       <nav>
-        <ul className="navbar__list">
+        <ul className={`navbar__list ${isMenuShowed && "list-active"}`}>
           <li className="navbar__li">
             <Link
               className={`navbar__link ${linkSelected === 1 && "link-active"}`}
@@ -69,6 +73,9 @@ const NavBar = () => {
           </li>
         </ul>
       </nav>
+      <div className="navbar__menu">
+      <i onClick={handleMenu} className='bx bx-menu-alt-right'></i>
+      </div>
     </header>
   )
 }

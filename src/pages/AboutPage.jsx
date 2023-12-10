@@ -19,7 +19,7 @@ const AboutPage = () => {
   return (
     <article className="about-container">
       <h2 className="about__title">Sobre mí</h2>
-      <p className="about__description"> Hola, soy <span className="about__description__p">Cristian Bastidas,</span> Ingeniero Electrónico apasionado por la programación y desarrollado de software, Cuento con habilidades como frontend, con las cuales soy capaz de crear sitios web que brinden una buena experiencia con el usuario, me encuentro en constante actualización con nuevas herramientas tecnológicas, si tienes alguna duda no dudes en contactarte conmigo. </p>
+      <p className="about__description"> Hola, soy <span className="about__description__p">Cristian Bastidas,</span> Ingeniero Electrónico, desarrollador Fullstack, apasionado por la programación y desarrollado de software, Cuento con habilidades como frontend, con las cuales soy capaz de crear sitios web que brinden una buena experiencia con el usuario, me encuentro en constante actualización con nuevas herramientas tecnológicas, si tienes alguna duda no dudes en contactarte conmigo. </p>
       <div className="about__abilities">
         <img className="about__abilities__img" src="./html.png" alt="html" />
         <img className="about__abilities__img" src="./css.png" alt="css" />
