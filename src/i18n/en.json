@@ -1,0 +1,54 @@
+{
+    "navbar":{
+        "inicio":"Home",
+        "sobre":"About me",
+        "proyectos":"My Projects",
+        "contacto":"Contact"
+    },
+    "home":{
+        "titulo":"Welcome",
+        "subtitulo":"I'm Cristian Bastidas",
+        "frase":"The truth can only be found in one pleace: the code.",
+        "reloj":"Watch made with react and css vanilla"
+    },
+    "about":{
+        "titulo":"About me",
+        "descripcionUno":"Hi, I'm",
+        "descripcionDos":"Electronic Engineer, Fullstack developer, passionate about programming and software development. I have skills as a frontend, with which I'm able to create websites that provide a good user experience. I'm constantly update with new technological tools, if you have any concerns, don't hesitate to contact to me.",
+        "educacion":"Education",
+        "trabajo":"Job"
+    },
+    "projects":{
+        "ecommerce":{
+            "titulo":"E-Comerce",
+            "descripcion":"Virtual store that contains items for sale with a user-friendly interaction. Important Concepts: Asynchronous Requests, Paging, CRUD with API."
+        },
+        "pokedex":{
+            "titulo":"Pokedex",
+            "descripcion":"Web application that allows you to view the information of all your favorite Pokémon. It can be filtered by type or directly by Pokémon name. Important concepts: React router, Redux, paging, error handling, protected routes."
+        },
+        "usuarios":{
+            "titulo":"Users CRUD",
+            "descripcion":"Web application that allows to interact with a user API through all http methods. Important concepts: HTTP methods (get, create, delete, update) and props."
+        },
+        "ryc":{
+            "titulo":"Rick and Morty",
+            "descripcion":"Here you can find all the characters of this series filtering them by their dimension and in each one their relevant information, it has a loading page. Important concepts: List and keys, controlled input, conditional rendering, and error handling."
+        },
+        "clima":{
+            "titulo":"Weather in the world",
+            "descripcion":"Here you can find out the weather in your current location or search somewhere in the world to find out its weather status. Important concepts: useEffect, asynchronous requests, API."
+        }
+    },
+    "contact":{
+        "campo":"Required field",
+        "nombre":"Name",
+        "mensaje":"Message",
+        "error":"All fields are required",
+        "titulo":"Pleased to meet you",
+        "descripcion":"You can send any message or contact me with my email",
+        "mensaje_despedida":"goodbye__message",
+        "gracias":"Thanks for visiting my page"
+    }
+
+}

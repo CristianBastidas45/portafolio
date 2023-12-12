@@ -1,12 +1,17 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import './NavBar.css'
+import { useTranslation } from "react-i18next"
 
 const NavBar = () => {
 
   const [isDark, setIsDark] = useState(false)
+  const [isEnglish, setIsEnglish] = useState(false)
   const [linkSelected, setLinkSelected] = useState(1)
   const [isMenuShowed, setIsMenuShowed] = useState(false)
+  const [isConfigShowed, setIsConfigShowed] = useState(false)
+
+  const { t, i18n } = useTranslation()
 
   const handleModo = () => {
     setIsDark(!isDark)
@@ -19,7 +24,17 @@ const NavBar = () => {
     }
   }
 
-  const handleSelected = e =>{
+  const handleIdioma = () => {
+    if (i18n.language == 'es') {
+      i18n.changeLanguage('en')
+    } else {
+      i18n.changeLanguage('es')
+    }
+    setIsEnglish(!isEnglish)
+  }
+
+  const handleSelected = e => {
+    setIsMenuShowed(false)
     setLinkSelected(+e.target.id)
   }
 
@@ -27,16 +42,33 @@ const NavBar = () => {
     setIsMenuShowed(!isMenuShowed)
   }
 
+  const handleConfig = () => {
+    setIsConfigShowed(!isConfigShowed)
+  }
+
   return (
     <header className="navbar-container">
-      <span className="navbar__d-l" onClick={handleModo}>
-        {
-          isDark ?
-            <i className='bx bxs-sun navbar__dark'></i>
-            :
-            <i className='bx bxs-moon navbar__dark'></i>
-        }
-      </span>
+      <div className="navbar__config">
+        <i onClick={handleConfig} className='bx bxs-color navbar__config__icon'></i>
+        <div className={`navbar__config__items ${isConfigShowed && 'active__config'}`}>
+          <span className="navbar__d-l" onClick={handleModo}>
+            {
+              isDark ?
+                <i className='bx bxs-sun navbar__dark'></i>
+                :
+                <i className='bx bxs-moon navbar__dark'></i>
+            }
+          </span>
+          <span className="navbar__d-l" onClick={handleIdioma}>
+            {
+              isEnglish ?
+                <img className="navbar__idiom__img" src="./espanish.png" alt="espanish" />
+                :
+                <img className="navbar__idiom__img" src="./english.png" alt="english" />
+            }
+          </span>
+        </div>
+      </div>
       <nav>
         <ul className={`navbar__list ${isMenuShowed && "list-active"}`}>
           <li className="navbar__li">
@@ -45,7 +77,7 @@ const NavBar = () => {
               to='/'
               onClick={handleSelected}
               id="1"
-            >Inicio</Link>
+            >{t("navbar.inicio")}</Link>
           </li>
           <li className="navbar__li">
             <Link
@@ -53,7 +85,7 @@ const NavBar = () => {
               to='/about'
               onClick={handleSelected}
               id="2"
-            >Sobre mi</Link>
+            >{t("navbar.sobre")}</Link>
           </li>
           <li className="navbar__li">
             <Link
@@ -61,7 +93,7 @@ const NavBar = () => {
               to='/projects'
               onClick={handleSelected}
               id="3"
-            >Mis Proyectos</Link>
+            >{t("navbar.proyectos")}</Link>
           </li>
           <li className="navbar__li">
             <Link
@@ -69,12 +101,12 @@ const NavBar = () => {
               to='/contact'
               onClick={handleSelected}
               id="4"
-            >Contacto</Link>
+            >{t("navbar.contacto")}</Link>
           </li>
         </ul>
       </nav>
       <div className="navbar__menu">
-      <i onClick={handleMenu} className='bx bx-menu-alt-right'></i>
+        <i onClick={handleMenu} className='bx bx-menu-alt-right'></i>
       </div>
     </header>
   )

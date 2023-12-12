@@ -7,16 +7,37 @@
     position: fixed;
     z-index: 10;
     backdrop-filter: blur(5px);    
+    position: fixed;
+}
+.navbar__config{
     position: relative;
 }
-
+.navbar__config__icon{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.navbar__config__items{
+    position: absolute;
+    right: 200%;
+    transition: all 300ms ease;
+    margin-top: 0.5em;
+}
+.active__config{
+    right: 0;
+}
 .navbar__d-l{
     aspect-ratio: 1;
+}
+.navbar__idiom__img{
+    cursor: pointer;
+    width: 2em;
+    aspect-ratio: 1.5;
 }
 .navbar__dark{
     cursor: pointer;
     width: 100%;
     font-size: 1.5rem;
+    margin-bottom: 0.4em;
 }
 .navbar__list{
     display: flex;

@@ -1,12 +1,15 @@
 import { useState } from 'react';
 import './styles/HomePage.css'
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const HomePage = () => {
 
 
   const [time, setTime] = useState(new Date())
   const dia = ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Vierenes', 'Sabado']
+
+  const {t,i18n} = useTranslation()
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -29,11 +32,12 @@ const HomePage = () => {
 
   return (
     <article className="home-container">
-      <h1 className="home__title" >Bienvenido</h1>
-      <h2 className="home__title home__name" >Soy Cristian Bastidas</h2>
+      <h1 className="home__title" >{t('home.titulo')}</h1>
+      <h2 className="home__title home__name" >{t('home.subtitulo')}</h2>
+      <a  className='home__download' href="./CV_Cristian_Bastidas.pdf" download>Descargar CV</a>
       <section className="home__center">
         <img className="home__center__logo" src='./LogoUp.svg' alt="Logoup" />
-        <p className="home__center__p">La verdad solo se puede encontrar en un lugar: el código. <span className="home__center__p__span">Robert C. Martin</span> </p>
+        <p className="home__center__p">{t('home.frase')} <span className="home__center__p__span">Robert C. Martin</span> </p>
       </section>
       <h2 className="home__subtitle">Software Developer <span className="home__subtitle__cursor">|</span></h2>
       <section className="home__redes">
@@ -59,7 +63,7 @@ const HomePage = () => {
         </div>
         <div className='diallines'></div>
       </div>
-      <span className="home__vanilla">Reloj realizado con react y css vanilla</span>
+      <span className="home__vanilla">{t('home.reloj')}</span>
     </article>
   );
 };

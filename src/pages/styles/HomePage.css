@@ -21,6 +21,20 @@
 .home__name {
     font-size: 2.2rem;
 }
+.home__download{
+    text-decoration: none;
+    background-color: #4fc3dc;
+    /* color: #ff2d75; */
+    color: inherit;
+    padding: 0.6em;
+    border-radius: 0.8em;
+    font-size: 1.6rem;
+    transition: all 300ms ease;
+}
+.home__download:hover{
+    transform: scale(1.1);
+    box-shadow: 8px 8px 8px black;    
+}
 
 .home__center {
     width: 95vw;

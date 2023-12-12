@@ -1,0 +1,54 @@
+{
+    "navbar":{
+        "inicio":"Inicio",
+        "sobre":"Sobre mi",
+        "proyectos":"Mis Proyectos",
+        "contacto":"Contacto"
+    },
+    "home":{
+        "titulo":"Bienvenido",
+        "subtitulo":"Soy Cristian Bastidas",
+        "frase":"La verdad solo se puede encontrar en un lugar: el código.",
+        "reloj":"Reloj realizado con react y css vanilla"
+    },
+    "about":{
+        "titulo":"Sobre mí",
+        "descripcionUno":"Hola, soy",
+        "descripcionDos":"Ingeniero Electrónico, desarrollador Fullstack, apasionado por la programación y desarrollado de software, Cuento con habilidades como frontend, con las cuales soy capaz de crear sitios web que brinden una buena experiencia con el usuario, me encuentro en constante actualización con nuevas herramientas tecnológicas, si tienes alguna inquietud no dudes en contactarte conmigo.",
+        "educacion":"Educacion",
+        "trabajo":"Trabajo"
+    },
+    "projects":{
+        "ecommerce":{
+            "titulo":"E-Comerce",
+            "descripcion":"Tienda virtual que contiene artículos a la venta con una interacción amigable con el usuario. Conceptos importantes: peticiones asíncronas, paginación, CRUD con API."
+        },
+        "pokedex":{
+            "titulo":"Pokedex",
+            "descripcion":"Aplicación web que permite ver la información de todos tus Pokémon favoritos. Se puede filtrar por tipo o directamente por el nombre del Pokémon. Conceptos importantes: React router, Redux, paginación, manejo de errores, rutas protegidas."
+        },
+        "usuarios":{
+            "titulo":"Usuarios CRUD",
+            "descripcion":"Aplicacion web que permite interactuar con una API de usuarios a traves de todos los metodos http. Conceptos importantes: Métodos HTTP (get, create, delete, update) y de props."
+        },
+        "ryc":{
+            "titulo":"Rick y Morty",
+            "descripcion":"Aqui podras encontrar todos los pesonajes de esta serie filtrandolos por su dimencion y en cada uno su informacion relevante, cuenta con pagina de carga. Conceptos importantes: List and keys, input controlados, renderizado condicional y manejo de errores."
+        },
+        "clima":{
+            "titulo":"Clima En el mundo",
+            "descripcion":"Aqui Podras saber el clima en tu ubicacion actual o buscar algun lugar del muno para saber su estado climatico. Conceptos importantes: useEffect, peticiones asíncronas, API."
+        }
+        
+    },
+    "contact":{
+        "campo":"Campo requerido",
+        "nombre":"Nombre",
+        "mensaje":"Mensaje",
+        "error":"Todos los campos son requeridos",
+        "titulo":"Un placer conocerte",
+        "descripcion":"puedes enviarme cualquier mensaje o contactarte conmigo con mi correo",
+        "mensaje_despedida":"mensaje__despedida",
+        "gracias":"gracias por visitar mi pagina"
+    }
+}

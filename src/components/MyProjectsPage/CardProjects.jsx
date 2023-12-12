@@ -1,6 +1,9 @@
+import { useTranslation } from 'react-i18next'
 import './styles/CardProjects.css'
 
 const CardProjects = ({ project }) => {
+
+  const {t} = useTranslation()
 
 
   return (
@@ -8,8 +11,8 @@ const CardProjects = ({ project }) => {
       <div className='cardprojects__img' style={{ "backgroundImage": `url('./${project.img}')` }}>
       </div>
       <section className='cardprojects__info'>
-        <h3 className='cardprojects__info__title'>{project.title}</h3>
-        <p className='cardprojects__info__p'>{project.description}</p>
+        <h3 className='cardprojects__info__title'>{t(`projects.${project.title}.titulo`)}</h3>
+        <p className='cardprojects__info__p'>{t(`projects.${project.title}.descripcion`)}</p>
         <ul className='cardprojects__info__list'>
           {
             project.techs.map(tech => (
