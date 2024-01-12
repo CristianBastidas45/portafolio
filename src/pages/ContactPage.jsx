@@ -16,12 +16,12 @@ const ContactPage = () => {
     e.preventDefault();
     if (form.current[0].value.trim() && form.current[1].value.trim() && form.current[2].value.trim()) {
       // console.log(form.current[0].value);
-      // emailjs.sendForm('service_jx9urrw', 'template_6s0jt19', form.current, 'urFBdqHJqes6fI-9-')
-      //   .then((result) => {
-      //     console.log(result.text);
-      //   }, (error) => {
-      //     console.log(error.text);
-      //   });
+      emailjs.sendForm('service_jx9urrw', 'template_6s0jt19', form.current, 'urFBdqHJqes6fI-9-')
+        .then((result) => {
+          console.log(result.text);
+        }, (error) => {
+          console.log(error.text);
+        });
       setRequiredCamps(false)
       setEmailSend(true)
       form.current[0].value =''
