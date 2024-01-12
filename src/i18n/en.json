@@ -45,6 +45,7 @@
         "nombre":"Name",
         "mensaje":"Message",
         "error":"All fields are required",
+        "enviado":"your message was sent",
         "titulo":"Pleased to meet you",
         "descripcion":"You can send any message or contact me with my email",
         "mensaje_despedida":"goodbye__message",

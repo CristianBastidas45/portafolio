@@ -46,7 +46,7 @@ const HomePage = () => {
       </section>
       <div className='clock'>
         <div>
-          <div className='info date'>{time.getFullYear() + '/' + time.getMonth() + '/' + time.getDate()}</div>
+          <div className='info date'>{time.getFullYear() + '/' + (time.getMonth()+1) + '/' + time.getDate()}</div>
           <div className='info day'>{dia[time.getDay()]}</div>
         </div>
         <div className='dot'></div>

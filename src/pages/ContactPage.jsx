@@ -2,10 +2,12 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './styles/ContactPage.css'
 import { useTranslation } from 'react-i18next';
+import EarthMoon from '../components/ContactPage/EarthMoon';
 
 const ContactPage = () => {
 
-  const [emailSend, setEmailSend] = useState(true)
+  const [emailSend, setEmailSend] = useState(false)
+  const [requiredCamps, setRequiredCamps] = useState(false)
 
   const form = useRef();
   const {t} = useTranslation()
@@ -13,16 +15,21 @@ const ContactPage = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     if (form.current[0].value.trim() && form.current[1].value.trim() && form.current[2].value.trim()) {
-      console.log(form.current[0].value);
-      emailjs.sendForm('service_jx9urrw', 'template_6s0jt19', form.current, 'urFBdqHJqes6fI-9-')
-        .then((result) => {
-          console.log(result.text);
-        }, (error) => {
-          console.log(error.text);
-        });
+      // console.log(form.current[0].value);
+      // emailjs.sendForm('service_jx9urrw', 'template_6s0jt19', form.current, 'urFBdqHJqes6fI-9-')
+      //   .then((result) => {
+      //     console.log(result.text);
+      //   }, (error) => {
+      //     console.log(error.text);
+      //   });
+      setRequiredCamps(false)
       setEmailSend(true)
+      form.current[0].value =''
+      form.current[1].value =''
+      form.current[2].value =''
     } else {
       setEmailSend(false)
+      setRequiredCamps(true)
     }
   };
 
@@ -40,9 +47,14 @@ const ContactPage = () => {
           <textarea className='contactpage__formulario__form__i form__textarea' name="message" style={{ "resize": "none" }} />
           <input className='contactpage__formulario__form__btn' type="submit" value="Enviar" />
           {
-            emailSend ? '' : (
-              <span>{t("contact.error")}</span>
-            )
+            emailSend ? (
+              <span className='contactpage__formulario__form__msg'>{t("contact.enviado")}</span>
+            ) : ''
+          }
+          {
+            requiredCamps ? (
+              <span className='contactpage__formulario__form__msg'>{t("contact.error")}</span>
+            ) : ''
           }
         </form>
       </section>
@@ -51,7 +63,8 @@ const ContactPage = () => {
         <p className='contacpage__mensaje__p'>{t("contact.descripcion")} <span>cbastidas929@gmail.com</span></p>
         <img className='contacpage__mensaje__img' src='./LogoUp.svg' alt="LogoUp" />
       </div>
-      <footer className='contacpage__footer'>
+      <EarthMoon />
+      {/* <footer className='contacpage__footer'>
         
           <pre className='maquina__escribir'>
             &lt;p className='{t("contact.mensaje_despedida")}'&gt; <br/>
@@ -64,8 +77,7 @@ const ContactPage = () => {
             font-weight: 600;<br />
             &#125;
           </pre>
-        
-      </footer>
+      </footer> */}
     </article>
   );
 }

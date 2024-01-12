@@ -48,6 +48,10 @@
     filter: brightness(1.1);
     box-shadow: 0.1em 0.1em #0008;
 }
+.contactpage__formulario__form__msg{
+    font-size: 1.2rem;
+    color: #ff2d75;;
+}
 .contacpage__mensaje{
     max-width: 90%;
     margin-right: 0.5em;
@@ -61,6 +65,7 @@
 .contacpage__mensaje__p{
     text-align: justify;
     margin-bottom: 0.5em;
+    
 }
 .contacpage__mensaje__img{
     max-width: 80%;

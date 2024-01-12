@@ -46,6 +46,7 @@
         "nombre":"Nombre",
         "mensaje":"Mensaje",
         "error":"Todos los campos son requeridos",
+        "enviado":"Su mensaje fue enviado",
         "titulo":"Un placer conocerte",
         "descripcion":"puedes enviarme cualquier mensaje o contactarte conmigo con mi correo",
         "mensaje_despedida":"mensaje__despedida",
