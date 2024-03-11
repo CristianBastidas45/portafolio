@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next"
 
 const NavBar = () => {
 
-  const [isDark, setIsDark] = useState(false)
+  const [isDark, setIsDark] = useState(true)
   const [isEnglish, setIsEnglish] = useState(false)
   const [linkSelected, setLinkSelected] = useState(1)
   const [isMenuShowed, setIsMenuShowed] = useState(false)
@@ -16,10 +16,12 @@ const NavBar = () => {
   const handleModo = () => {
     setIsDark(!isDark)
     if (isDark) {
-      document.body.style.background = "var(--color-blanco)";
+      // document.body.style.background = "var(--color-blanco)";
+      document.body.style.background = "linear-gradient(to bottom left,var(--color-blanco), 85%, var(--color-morado))";
       document.body.style.color = "var(--color-negro)";
     } else {
-      document.body.style.background = "var(--color-negro)";
+      // document.body.style.background = "var(--color-negro)";
+      document.body.style.background = "linear-gradient(to bottom left,var(--color-negro), 85%, var(--color-morado))";
       document.body.style.color = "var(--color-blanco)";
     }
   }

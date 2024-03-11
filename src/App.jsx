@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className='appprincipal-container'>
-      <div className='appprincipal__bubbles'>
+      {/* <div className='appprincipal__bubbles'>
         <span style={{ "--i": "11" }}></span>
         <span style={{ "--i": "12" }}></span>
         <span style={{ "--i": "24" }}></span>
@@ -39,7 +39,7 @@ function App() {
         <span style={{ "--i": "34" }}></span>
         <span style={{ "--i": "12" }}></span>
         <span style={{ "--i": "24" }}></span>
-      </div>
+      </div> */}
       <NavBar />
       <Routes>
         <Route path='/' element={<HomePage />} />

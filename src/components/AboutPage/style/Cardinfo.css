@@ -16,7 +16,7 @@
 }
 .cardinfo__date{
     width: 15vw;
-    border-left: 2px solid #ff2d75;
+    border-left: 2px solid var(--color-morado);
     padding-left: 3em;
     position: relative;
 }
@@ -41,7 +41,7 @@
     bottom: -0.5em;
     left: -0.65em;
     z-index: 1;
-    background-color: #ff2d75;
+    background-color: var(--color-morado);
     border-radius: 50%;
     width: 1em;
     /* height: 1em; */

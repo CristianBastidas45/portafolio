@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600&display=swap');
 
 :root {
-    --color-negro: rgb(75, 75, 75);
-    --color-blanco: rgb(230, 230, 230);
+    --color-negro: #000000;
+    --color-verde: #05FF04;
+    --color-morado: #9584E6;
+    --color-morado-oscuro: #554a88;
+    --color-rosado: #FFDFFF;
+    --color-blanco: #E0F5FE;
 }
 
 body {
     font-family: 'Outfit', sans-serif;
-    background-color: var(--color-blanco);
-    color: var(--color-negro);
+    background: linear-gradient(to bottom left,var(--color-negro), 85%, var(--color-morado));
+    color: var(--color-blanco);
     margin: 0;
     padding: 0;
 }

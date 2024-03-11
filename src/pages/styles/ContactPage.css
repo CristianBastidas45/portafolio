@@ -1,6 +1,6 @@
 .contactpage-container{
     width: 95vw;
-    margin: 2.8em auto 1em;
+    margin: 3.5em auto 1em;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1em;
@@ -41,6 +41,7 @@
     width: 5em;
     border: none;
     background-color: #ff2d75;
+    background-color: var(--color-morado);
     font-size: 1.2rem;
     color: inherit;
 }
