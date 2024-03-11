@@ -77,11 +77,12 @@
         position: absolute;
         top: 3em;
         right: 0;
-        background-color: #4fc2dcdc;
+        background-color: var(--color-morado);
         border-radius: 0.8em;
         padding-left: 0.4em;
         translate: 100%;
         transition: translate 500ms ease;
+        color: white;
     }
     .list-active{
         translate: 0%;

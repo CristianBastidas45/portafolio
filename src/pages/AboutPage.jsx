@@ -75,6 +75,14 @@ const AboutPage = () => {
               <img className="about__abilities__img" src="./postman.png" alt="postman" />
               <p>Postman</p>
             </section>
+            <section className="about__abilities__card__item">
+              <img className="about__abilities__img" src="./sql.png" alt="sql" />
+              <p>SQL</p>
+            </section>
+            <section className="about__abilities__card__item">
+              <img className="about__abilities__img" src="./python.png" alt="python" />
+              <p>Python</p>
+            </section>
           </div>
 
         </article>
